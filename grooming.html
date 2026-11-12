@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Груминг — цены | Pro&amp;Vet</title>
+  <meta name="description" content="Стрижка, мытьё и гигиена в зоосалоне при клинике — а рядом врач, если что-то заметим.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&text=%E2%86%92%E2%86%97%E2%86%90&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Pro&Vet — на главную">
+      <img src="img/logo.svg" width="40" height="40" alt="">
+      <span>Pro&amp;Vet</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="services.html">Услуги</a>
+      <a href="index.html#team">Врачи</a>
+      <a href="grooming.html" class="is-current" aria-current="page">Груминг</a>
+      <a href="pharmacy.html">Аптека</a>
+      <a href="index.html#reviews">Отзывы</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+78005550000" class="header__phone">+7 800 555 00 00</a>
+      <button class="btn btn--accent btn--sm" data-booking>Записаться на приём</button>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="svc-hero card">
+      <div class="svc-hero__text">
+        <nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><a href="services.html">Услуги</a><span aria-hidden="true">/</span><span aria-current="page">Груминг</span></nav>
+        <h1 class="svc-hero__title">Груминг<br>в зоосалоне</h1>
+        <p class="hero__lead">Стрижка, мытьё и гигиена в зоосалоне при клинике — а рядом врач, если что-то заметим.</p>
+        <div class="hero__btns">
+          <button class="btn btn--accent" data-booking="grooming">Записаться <span class="arr">→</span></button>
+          <a href="#prices" class="btn btn--outline btn--white">Смотреть цены</a>
+        </div>
+        <dl class="facts"><div class="fact"><dt>от 900 ₽</dt><dd>гигиенический комплекс</dd></div><div class="fact"><dt>2 мастера</dt><dd>в зоосалоне</dd></div><div class="fact"><dt>Врач рядом</dt><dd>если что-то заметим</dd></div></dl>
+      </div>
+      <div class="svc-hero__visual" style="--bg:#cbbeff">
+        <img src="img/img2.png" width="848" height="1264" alt="" style="--pad:7.7%">
+      </div>
+    </section>
+
+    <section class="price card card--pad" id="prices">
+      <div class="price__aside">
+        <h2 class="h2">Прайс-лист</h2>
+        <p class="price__note">Цены указаны в рублях и не являются публичной офертой. Точную стоимость врач назовёт после осмотра — до начала процедур.</p>
+        <button class="btn btn--dark" data-booking="grooming">Записаться <span class="arr">→</span></button>
+        <p class="price__upd">Обновлено 1 ноября 2026</p>
+      </div>
+      <div class="price__groups">
+          <div class="price-group">
+            <h3 class="price-group__title">Комплексы для собак</h3>
+            <ul class="price-list"><li class="price-row"><div><p class="price-row__name">Мелкие породы</p><p class="price-row__note">До 5 кг: мытьё, сушка, стрижка, гигиена</p></div><span class="price-row__val">2&nbsp;000&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Средние породы</p><p class="price-row__note">До 15 кг</p></div><span class="price-row__val">3&nbsp;000&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Крупные породы</p><p class="price-row__note">От 15 кг</p></div><span class="price-row__val">от&nbsp;4&nbsp;500&nbsp;₽</span></li></ul>
+          </div>
+          <div class="price-group">
+            <h3 class="price-group__title">Комплексы для кошек</h3>
+            <ul class="price-list"><li class="price-row"><div><p class="price-row__name">Комплекс для кошек</p><p class="price-row__note">Мытьё, сушка, вычёсывание, гигиена</p></div><span class="price-row__val">2&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Стрижка «под льва»</p></div><span class="price-row__val">2&nbsp;800&nbsp;₽</span></li></ul>
+          </div>
+          <div class="price-group">
+            <h3 class="price-group__title">Отдельные услуги</h3>
+            <ul class="price-list"><li class="price-row"><div><p class="price-row__name">Гигиенический комплекс</p><p class="price-row__note">Когти, уши, лапы</p></div><span class="price-row__val">900&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Мытьё с сушкой</p></div><span class="price-row__val">от&nbsp;1&nbsp;200&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Экспресс-линька</p></div><span class="price-row__val">от&nbsp;1&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Санитарная стрижка</p></div><span class="price-row__val">800&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Удаление колтунов</p><p class="price-row__note">За каждые 15 минут</p></div><span class="price-row__val">400&nbsp;₽</span></li></ul>
+          </div>
+      </div>
+    </section>
+
+    <section class="svc-steps">
+      <span class="chip chip--pink">Как проходит</span>
+      <h2 class="h2 h2--white">Три шага<br>без стресса</h2>
+      <ol class="steps steps--row">
+          <li class="step">
+            <span class="step__num">1</span>
+            <div class="step__body">
+              <h3 class="step__title">Знакомство</h3>
+              <p class="step__text">Даём освоиться в салоне и обсуждаем стрижку с владельцем.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <div class="step__body">
+              <h3 class="step__title">Уход</h3>
+              <p class="step__text">Мытьё, сушка и стрижка — гипоаллергенная косметика и тёплый фен.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <div class="step__body">
+              <h3 class="step__title">Проверка</h3>
+              <p class="step__text">Если заметим проблему с кожей или ушами — сразу покажем ветеринару.</p>
+            </div>
+          </li>
+      </ol>
+    </section>
+
+    <section class="perks">
+      <div class="perk perk--pink"><span class="perk__num">01</span><h3 class="q__title">Без седации</h3><p class="q__text">Работаем спокойно и с перерывами — питомец не устаёт и не нервничает.</p></div>
+      <div class="perk perk--yellow"><span class="perk__num">02</span><h3 class="q__title">Своя косметика</h3><p class="q__text">Профессиональные гипоаллергенные шампуни и бальзамы — включены в цену.</p></div>
+      <div class="perk perk--white"><span class="perk__num">03</span><h3 class="q__title">Врач за стеной</h3><p class="q__text">Заметили покраснение, клеща или воспаление — сразу покажем терапевту.</p></div>
+    </section>
+
+    <section class="others card card--pad">
+      <div class="sec-head">
+        <h2 class="h2">Другие направления</h2>
+        <a href="services.html" class="btn btn--outline">Все услуги и цены <span class="arr">→</span></a>
+      </div>
+      <div class="minis">
+        <a class="mini" href="therapy.html" style="--bg:#f2f2f7"><span class="mini__title">Терапия и приём</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet5.png" alt="" loading="lazy"></a>
+        <a class="mini" href="vaccination.html" style="--bg:#ffb8cb"><span class="mini__title">Вакцинация</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet1.png" alt="" loading="lazy"></a>
+        <a class="mini" href="surgery.html" style="--bg:#ffd84d"><span class="mini__title">Хирургия</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet2.png" alt="" loading="lazy"></a>
+        <a class="mini" href="ophthalmology.html" style="--bg:#a9ccff"><span class="mini__title">Офтальмология</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet3.png" alt="" loading="lazy"></a>
+        <a class="mini" href="diagnostics.html" style="--bg:#a6e8c8"><span class="mini__title">Диагностика</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet4.png" alt="" loading="lazy"></a>
+        <a class="mini" href="pharmacy.html" style="--bg:#ffc6a3"><span class="mini__title">Ветаптека</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet6.png" alt="" loading="lazy"></a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <img class="cta__paw" src="img/paw-big.svg" width="320" height="320" alt="" aria-hidden="true">
+      <div class="cta__text">
+        <h2 class="h2">Не знаете, к кому записаться?</h2>
+        <p>Позвоните или напишите — администратор подскажет специалиста и подберёт удобное время.</p>
+      </div>
+      <div class="cta__actions">
+        <a href="tel:+78005550000" class="cta__phone">+7 800 555 00 00</a>
+        <div class="chips chips--lg chips--wrap">
+          <button class="btn btn--dark" data-booking>Записаться онлайн <span class="arr">→</span></button>
+          <a href="https://wa.me/78005550000" target="_blank" rel="noopener" class="btn btn--white-solid">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__mark">Pro&amp;Vet</p>
+    <div class="footer__bottom">
+      <p class="footer__muted">ОГРНИП 000000000000000 · ИНН 0000000000</p>
+      <p class="footer__links"><a href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте</a> · <a href="https://wa.me/78005550000" target="_blank" rel="noopener">WhatsApp</a> · <a href="tel:+78005550000">+7 800 555 00 00</a></p>
+      <p class="footer__muted">© 2026 Pro&amp;Vet</p>
+    </div>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

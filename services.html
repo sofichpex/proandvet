@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Услуги и цены | Pro&amp;Vet</title>
+  <meta name="description" content="Все направления ветклиники Pro&amp;Vet и полный прайс-лист: терапия, вакцинация, хирургия, офтальмология, диагностика, груминг.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&text=%E2%86%92%E2%86%97%E2%86%90&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Pro&Vet — на главную">
+      <img src="img/logo.svg" width="40" height="40" alt="">
+      <span>Pro&amp;Vet</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="services.html" class="is-current" aria-current="page">Услуги</a>
+      <a href="index.html#team">Врачи</a>
+      <a href="grooming.html">Груминг</a>
+      <a href="pharmacy.html">Аптека</a>
+      <a href="index.html#reviews">Отзывы</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+78005550000" class="header__phone">+7 800 555 00 00</a>
+      <button class="btn btn--accent btn--sm" data-booking>Записаться на приём</button>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="list-hero card">
+      <nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><span aria-current="page">Услуги</span></nav>
+      <h1 class="svc-hero__title">Услуги и цены</h1>
+      <p class="hero__lead">Семь направлений под одной крышей: от первой прививки до операции на&nbsp;глазах. Найдите процедуру — и сразу запишитесь.</p>
+      <label class="search">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m14 14 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="price-search" placeholder="Например, УЗИ или стрижка когтей" autocomplete="off" aria-label="Поиск по прайс-листу">
+      </label>
+      <div class="chips chips--wrap"><a class="chip chip--lg" href="#p-therapy">Терапия и приём</a><a class="chip chip--lg" href="#p-vaccination">Вакцинация</a><a class="chip chip--lg" href="#p-surgery">Хирургия</a><a class="chip chip--lg" href="#p-ophthalmology">Офтальмология</a><a class="chip chip--lg" href="#p-diagnostics">Диагностика</a><a class="chip chip--lg" href="#p-grooming">Груминг</a><a class="chip chip--lg" href="pharmacy.html">Ветаптека ↗</a></div>
+    </section>
+
+    <section class="services card card--pad">
+      <div class="sec-head">
+        <h2 class="h2">Направления</h2>
+      </div>
+      <div class="tiles">
+        <article class="tile tile--wide">
+          <div class="tile__content">
+            <div>
+              <h3 class="tile__title-lg"><a href="therapy.html">Терапия<br>и приём</a></h3>
+              <p class="tile__desc">Осмотр, консультация и&nbsp;понятный план лечения — без лишних назначений.</p>
+            </div>
+            <a href="therapy.html" class="btn btn--dark">Подробнее и цены <span class="arr">→</span></a>
+          </div>
+          <a href="therapy.html" class="tile__img tile__img--wide" tabindex="-1" aria-hidden="true"><img src="img/pet5.png" width="848" height="1264" alt="" loading="lazy"></a>
+        </article>
+        <a class="tile tile--pink" href="vaccination.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Вакцинация</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Прививки по графику, ветпаспорт, чипирование</p>
+          </div>
+          <div class="tile__img" style="--w:341px;--h:423px"><img src="img/pet1.png" width="928" height="1152" alt="" loading="lazy"></div>
+        </a>
+        <a class="tile tile--yellow" href="surgery.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Хирургия</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Плановые операции и стерилизация</p>
+          </div>
+          <div class="tile__img" style="--w:306px;--h:380px"><img src="img/pet2.png" width="928" height="1152" alt="" loading="lazy"></div>
+        </a>
+        <a class="tile tile--blue" href="ophthalmology.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Офтальмология</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Диагностика и операции на глазах</p>
+          </div>
+          <div class="tile__img" style="--w:276px;--h:342px"><img src="img/pet3.png" width="928" height="1152" alt="" loading="lazy"></div>
+        </a>
+        <a class="tile tile--green" href="diagnostics.html">
+          <div class="tile__head tile__head--sm">
+            <div class="tile__row"><h3 class="tile__title">Диагностика</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Анализы, УЗИ и экспресс-тесты</p>
+          </div>
+          <div class="tile__img" style="--w:340px;--h:422px"><img src="img/pet4.png" width="928" height="1152" alt="" loading="lazy"></div>
+        </a>
+        <a class="tile tile--violet" href="grooming.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Груминг</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Стрижка и уход в своём зоосалоне</p>
+          </div>
+          <div class="tile__img" style="--w:300px;--h:372px"><img src="img/pet7.png" width="928" height="1152" alt="" loading="lazy"></div>
+        </a>
+        <a class="tile tile--peach" href="pharmacy.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Ветаптека</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Лекарства и&nbsp;корма сразу после приёма</p>
+          </div>
+          <div class="tile__img tile__img--crop" style="--w:402px;--h:479px"><img src="img/pet6.png" width="928" height="1152" alt="" loading="lazy"></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="price-all card card--pad" id="prices">
+      <div class="sec-head sec-head--end">
+        <h2 class="h2">Прайс-лист</h2>
+        <p class="price__note price__note--right">Цены в рублях, обновлено 1&nbsp;ноября 2026. Не являются публичной офертой.</p>
+      </div>
+      <div class="price-blocks" id="price-blocks">
+        <div class="price-block" id="p-therapy" data-scope>
+          <div class="price-block__head">
+            <h3 class="price-block__title"><a href="therapy.html">Терапия и приём</a></h3>
+            <div class="price-block__actions">
+              <a href="therapy.html" class="btn btn--outline btn--sm">Подробнее</a>
+              <button class="btn btn--accent btn--sm" data-booking="therapy">Записаться</button>
+            </div>
+          </div>
+          <div class="price-group"><h4 class="price-group__sub">Приём</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Первый визит-знакомство</p><p class="price-row__note">Взвешивание, лакомство, без процедур</p></div><span class="price-row__val">Бесплатно</span></li><li class="price-row"><div><p class="price-row__name">Первичный приём терапевта</p><p class="price-row__note">Осмотр и консультация, 30 минут</p></div><span class="price-row__val">1&nbsp;200&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Повторный приём</p><p class="price-row__note">В течение 14 дней после первичного</p></div><span class="price-row__val">800&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Приём ведущего врача</p></div><span class="price-row__val">1&nbsp;600&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Консультация по результатам анализов</p></div><span class="price-row__val">600&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Процедуры</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Подкожная или внутримышечная инъекция</p><p class="price-row__note">Без стоимости препарата</p></div><span class="price-row__val">250&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Внутривенная инъекция</p></div><span class="price-row__val">400&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Установка внутривенного катетера</p></div><span class="price-row__val">600&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Капельница</p><p class="price-row__note">До 1 часа, растворы включены</p></div><span class="price-row__val">1&nbsp;100&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Обработка раны</p><p class="price-row__note">В зависимости от площади</p></div><span class="price-row__val">от&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Чистка ушей</p></div><span class="price-row__val">400&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Стрижка когтей</p></div><span class="price-row__val">300&nbsp;₽</span></li></ul></div>
+        </div>
+        <div class="price-block" id="p-vaccination" data-scope>
+          <div class="price-block__head">
+            <h3 class="price-block__title"><a href="vaccination.html">Вакцинация</a></h3>
+            <div class="price-block__actions">
+              <a href="vaccination.html" class="btn btn--outline btn--sm">Подробнее</a>
+              <button class="btn btn--accent btn--sm" data-booking="vaccination">Записаться</button>
+            </div>
+          </div>
+          <div class="price-group"><h4 class="price-group__sub">Вакцинация собак</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Комплексная вакцина</p><p class="price-row__note">Чума, парвовироз, аденовироз, лептоспироз</p></div><span class="price-row__val">1&nbsp;900&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Вакцина от бешенства</p></div><span class="price-row__val">900&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Вакцинация щенка «под ключ»</p><p class="price-row__note">Две комплексные прививки с ревакцинацией</p></div><span class="price-row__val">3&nbsp;400&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Вакцинация кошек</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Комплексная вакцина</p><p class="price-row__note">Панлейкопения, калицивироз, ринотрахеит</p></div><span class="price-row__val">1&nbsp;700&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Комплексная вакцина с бешенством</p></div><span class="price-row__val">2&nbsp;200&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Документы и чипирование</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Осмотр перед вакцинацией</p></div><span class="price-row__val">Входит</span></li><li class="price-row"><div><p class="price-row__name">Ветеринарный паспорт</p></div><span class="price-row__val">300&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Чипирование</p><p class="price-row__note">С внесением в международную базу</p></div><span class="price-row__val">1&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Международный ветпаспорт</p><p class="price-row__note">Для поездок за границу</p></div><span class="price-row__val">600&nbsp;₽</span></li></ul></div>
+        </div>
+        <div class="price-block" id="p-surgery" data-scope>
+          <div class="price-block__head">
+            <h3 class="price-block__title"><a href="surgery.html">Хирургия</a></h3>
+            <div class="price-block__actions">
+              <a href="surgery.html" class="btn btn--outline btn--sm">Подробнее</a>
+              <button class="btn btn--accent btn--sm" data-booking="surgery">Записаться</button>
+            </div>
+          </div>
+          <div class="price-group"><h4 class="price-group__sub">Консультация</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Приём хирурга</p><p class="price-row__note">Осмотр и план операции</p></div><span class="price-row__val">1&nbsp;200&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Предоперационное обследование</p><p class="price-row__note">Анализ крови и осмотр анестезиолога</p></div><span class="price-row__val">2&nbsp;400&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Стерилизация и кастрация</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Кастрация кота</p></div><span class="price-row__val">3&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Стерилизация кошки</p></div><span class="price-row__val">5&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Кастрация кобеля</p><p class="price-row__note">В зависимости от веса</p></div><span class="price-row__val">от&nbsp;6&nbsp;000&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Стерилизация суки</p><p class="price-row__note">В зависимости от веса</p></div><span class="price-row__val">от&nbsp;9&nbsp;000&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Другие операции</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Удаление новообразования</p><p class="price-row__note">Без гистологии</p></div><span class="price-row__val">от&nbsp;4&nbsp;000&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Ушивание раны</p></div><span class="price-row__val">от&nbsp;2&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Ингаляционный наркоз</p><p class="price-row__note">Каждые 30 минут</p></div><span class="price-row__val">2&nbsp;000&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Стационар</p><p class="price-row__note">Сутки, с уходом и наблюдением</p></div><span class="price-row__val">1&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Послеоперационная попона</p></div><span class="price-row__val">600&nbsp;₽</span></li></ul></div>
+        </div>
+        <div class="price-block" id="p-ophthalmology" data-scope>
+          <div class="price-block__head">
+            <h3 class="price-block__title"><a href="ophthalmology.html">Офтальмология</a></h3>
+            <div class="price-block__actions">
+              <a href="ophthalmology.html" class="btn btn--outline btn--sm">Подробнее</a>
+              <button class="btn btn--accent btn--sm" data-booking="ophthalmology">Записаться</button>
+            </div>
+          </div>
+          <div class="price-group"><h4 class="price-group__sub">Диагностика</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Приём офтальмолога</p><p class="price-row__note">Осмотр щелевой лампой</p></div><span class="price-row__val">1&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Тест Ширмера</p><p class="price-row__note">Оценка слёзопродукции</p></div><span class="price-row__val">400&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Флюоресцеиновый тест</p><p class="price-row__note">Поиск повреждений роговицы</p></div><span class="price-row__val">400&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Измерение внутриглазного давления</p></div><span class="price-row__val">500&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Лечение и операции</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Промывание слёзных каналов</p></div><span class="price-row__val">1&nbsp;200&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Удаление аденомы третьего века</p></div><span class="price-row__val">от&nbsp;6&nbsp;000&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Операция при завороте века</p></div><span class="price-row__val">от&nbsp;7&nbsp;500&nbsp;₽</span></li></ul></div>
+        </div>
+        <div class="price-block" id="p-diagnostics" data-scope>
+          <div class="price-block__head">
+            <h3 class="price-block__title"><a href="diagnostics.html">Диагностика</a></h3>
+            <div class="price-block__actions">
+              <a href="diagnostics.html" class="btn btn--outline btn--sm">Подробнее</a>
+              <button class="btn btn--accent btn--sm" data-booking="diagnostics">Записаться</button>
+            </div>
+          </div>
+          <div class="price-group"><h4 class="price-group__sub">Лабораторные анализы</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Общий анализ крови</p></div><span class="price-row__val">800&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Биохимия крови</p><p class="price-row__note">Базовый профиль, 12 показателей</p></div><span class="price-row__val">1&nbsp;600&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Общий анализ мочи</p></div><span class="price-row__val">600&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Цитология</p></div><span class="price-row__val">1&nbsp;400&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Экспресс-тест на инфекции</p><p class="price-row__note">Результат через 15 минут</p></div><span class="price-row__val">1&nbsp;200&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Инструментальная диагностика</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">УЗИ брюшной полости</p></div><span class="price-row__val">1&nbsp;800&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">УЗИ сердца (ЭхоКГ)</p></div><span class="price-row__val">2&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">ЭКГ</p></div><span class="price-row__val">1&nbsp;000&nbsp;₽</span></li></ul></div>
+        </div>
+        <div class="price-block" id="p-grooming" data-scope>
+          <div class="price-block__head">
+            <h3 class="price-block__title"><a href="grooming.html">Груминг</a></h3>
+            <div class="price-block__actions">
+              <a href="grooming.html" class="btn btn--outline btn--sm">Подробнее</a>
+              <button class="btn btn--accent btn--sm" data-booking="grooming">Записаться</button>
+            </div>
+          </div>
+          <div class="price-group"><h4 class="price-group__sub">Комплексы для собак</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Мелкие породы</p><p class="price-row__note">До 5 кг: мытьё, сушка, стрижка, гигиена</p></div><span class="price-row__val">2&nbsp;000&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Средние породы</p><p class="price-row__note">До 15 кг</p></div><span class="price-row__val">3&nbsp;000&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Крупные породы</p><p class="price-row__note">От 15 кг</p></div><span class="price-row__val">от&nbsp;4&nbsp;500&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Комплексы для кошек</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Комплекс для кошек</p><p class="price-row__note">Мытьё, сушка, вычёсывание, гигиена</p></div><span class="price-row__val">2&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Стрижка «под льва»</p></div><span class="price-row__val">2&nbsp;800&nbsp;₽</span></li></ul></div><div class="price-group"><h4 class="price-group__sub">Отдельные услуги</h4><ul class="price-list"><li class="price-row"><div><p class="price-row__name">Гигиенический комплекс</p><p class="price-row__note">Когти, уши, лапы</p></div><span class="price-row__val">900&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Мытьё с сушкой</p></div><span class="price-row__val">от&nbsp;1&nbsp;200&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Экспресс-линька</p></div><span class="price-row__val">от&nbsp;1&nbsp;500&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Санитарная стрижка</p></div><span class="price-row__val">800&nbsp;₽</span></li><li class="price-row"><div><p class="price-row__name">Удаление колтунов</p><p class="price-row__note">За каждые 15 минут</p></div><span class="price-row__val">400&nbsp;₽</span></li></ul></div>
+        </div>
+        <div class="slots__empty" id="price-empty" hidden><b>Ничего не нашлось</b>Попробуйте другое слово или позвоните нам — подскажем</div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <img class="cta__paw" src="img/paw-big.svg" width="320" height="320" alt="" aria-hidden="true">
+      <div class="cta__text">
+        <h2 class="h2">Не нашли нужную услугу?</h2>
+        <p>Позвоните или напишите — администратор подскажет специалиста и подберёт удобное время.</p>
+      </div>
+      <div class="cta__actions">
+        <a href="tel:+78005550000" class="cta__phone">+7 800 555 00 00</a>
+        <div class="chips chips--lg chips--wrap">
+          <button class="btn btn--dark" data-booking>Записаться онлайн <span class="arr">→</span></button>
+          <a href="https://wa.me/78005550000" target="_blank" rel="noopener" class="btn btn--white-solid">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__mark">Pro&amp;Vet</p>
+    <div class="footer__bottom">
+      <p class="footer__muted">ОГРНИП 000000000000000 · ИНН 0000000000</p>
+      <p class="footer__links"><a href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте</a> · <a href="https://wa.me/78005550000" target="_blank" rel="noopener">WhatsApp</a> · <a href="tel:+78005550000">+7 800 555 00 00</a></p>
+      <p class="footer__muted">© 2026 Pro&amp;Vet</p>
+    </div>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

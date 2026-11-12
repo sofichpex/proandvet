@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ветаптека | Pro&amp;Vet</title>
+  <meta name="description" content="Ветаптека при клинике Pro&amp;Vet: препараты, лечебные корма, антипаразитарные средства. Бронь онлайн на 24 часа.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&text=%E2%86%92%E2%86%97%E2%86%90&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Pro&Vet — на главную">
+      <img src="img/logo.svg" width="40" height="40" alt="">
+      <span>Pro&amp;Vet</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="services.html">Услуги</a>
+      <a href="index.html#team">Врачи</a>
+      <a href="grooming.html">Груминг</a>
+      <a href="pharmacy.html" class="is-current" aria-current="page">Аптека</a>
+      <a href="index.html#reviews">Отзывы</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+78005550000" class="header__phone">+7 800 555 00 00</a>
+      <button class="btn btn--accent btn--sm" data-booking>Записаться на приём</button>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="svc-hero card">
+      <div class="svc-hero__text">
+        <nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><a href="services.html">Услуги</a><span aria-hidden="true">/</span><span aria-current="page">Ветаптека</span></nav>
+        <h1 class="svc-hero__title">Лекарства —<br>сразу после приёма</h1>
+        <p class="hero__lead">Всё, что назначил врач, — в&nbsp;аптеке при клинике. Отложите товары онлайн и&nbsp;заберите в&nbsp;течение 24&nbsp;часов, оплата на месте.</p>
+        <div class="hero__btns">
+          <a href="#catalog" class="btn btn--accent">Перейти в каталог <span class="arr">→</span></a>
+          <a href="https://wa.me/78005550000" target="_blank" rel="noopener" class="btn btn--outline btn--white">Спросить фармацевта</a>
+        </div>
+        <dl class="facts"><div class="fact"><dt>500+</dt><dd>позиций в наличии</dd></div><div class="fact"><dt>24 часа</dt><dd>бронь без предоплаты</dd></div><div class="fact"><dt>9:00–21:00</dt><dd>без выходных</dd></div></dl>
+      </div>
+      <div class="svc-hero__visual svc-hero__visual--pharm" style="--bg:#a6e8c8">
+        <div class="capsule capsule--hero" aria-hidden="true"><span></span><span></span></div>
+        <img src="img/pet6.png" width="928" height="1152" alt="" style="--pad:10.1%">
+      </div>
+    </section>
+
+    <section class="catalog card card--pad" id="catalog">
+      <div class="sec-head sec-head--end">
+        <h2 class="h2">Каталог</h2>
+        <label class="search search--sm">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m14 14 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="search" id="product-search" placeholder="Поиск по аптеке" autocomplete="off" aria-label="Поиск по аптеке">
+        </label>
+      </div>
+      <div class="chips chips--wrap" id="cat-filter"><button class="opt is-active" data-cat="all">Все</button><button class="opt" data-cat="drugs">Препараты</button><button class="opt" data-cat="food">Лечебные корма</button><button class="opt" data-cat="parasites">Антипаразитарные</button><button class="opt" data-cat="care">Средства ухода</button></div>
+      <div class="catalog__layout">
+        <ul class="products" id="products">
+          <li class="product" data-cat="drugs" data-id="ap1" data-name="Антибиотик широкого спектра" data-price="640">
+            <div class="product__main"><p class="price-row__name">Антибиотик широкого спектра</p><p class="price-row__note">Таблетки, 10 шт · по назначению врача</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">640&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap1">Отложить</button>
+          </li>
+          <li class="product" data-cat="drugs" data-id="ap2" data-name="Противовоспалительное для собак" data-price="890">
+            <div class="product__main"><p class="price-row__name">Противовоспалительное для собак</p><p class="price-row__note">Суспензия, 15 мл · по назначению врача</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">890&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap2">Отложить</button>
+          </li>
+          <li class="product" data-cat="drugs" data-id="ap3" data-name="Пробиотик для кошек и собак" data-price="520">
+            <div class="product__main"><p class="price-row__name">Пробиотик для кошек и собак</p><p class="price-row__note">Капли, 10 мл</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">520&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap3">Отложить</button>
+          </li>
+          <li class="product" data-cat="drugs" data-id="ap4" data-name="Капли глазные увлажняющие" data-price="410">
+            <div class="product__main"><p class="price-row__name">Капли глазные увлажняющие</p><p class="price-row__note">10 мл</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">410&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap4">Отложить</button>
+          </li>
+          <li class="product" data-cat="drugs" data-id="ap5" data-name="Гепатопротектор" data-price="1150">
+            <div class="product__main"><p class="price-row__name">Гепатопротектор</p><p class="price-row__note">Таблетки, 30 шт</p></div>
+            <span class="stock stock--order">Под заказ, 1–2 дня</span>
+            <span class="price-row__val">1&nbsp;150&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap5">Отложить</button>
+          </li>
+          <li class="product" data-cat="drugs" data-id="ap6" data-name="Успокоительное на травах" data-price="460">
+            <div class="product__main"><p class="price-row__name">Успокоительное на травах</p><p class="price-row__note">Таблетки, 30 шт</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">460&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap6">Отложить</button>
+          </li>
+          <li class="product" data-cat="food" data-id="ap7" data-name="Корм для профилактики МКБ у кошек" data-price="2300">
+            <div class="product__main"><p class="price-row__name">Корм для профилактики МКБ у кошек</p><p class="price-row__note">Сухой, 1,5 кг</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">2&nbsp;300&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap7">Отложить</button>
+          </li>
+          <li class="product" data-cat="food" data-id="ap8" data-name="Гипоаллергенный корм для собак" data-price="2900">
+            <div class="product__main"><p class="price-row__name">Гипоаллергенный корм для собак</p><p class="price-row__note">Сухой, 2 кг</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">2&nbsp;900&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap8">Отложить</button>
+          </li>
+          <li class="product" data-cat="food" data-id="ap9" data-name="Гастроинтестинальный корм" data-price="190">
+            <div class="product__main"><p class="price-row__name">Гастроинтестинальный корм</p><p class="price-row__note">Пауч, 85 г</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">190&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap9">Отложить</button>
+          </li>
+          <li class="product" data-cat="food" data-id="ap10" data-name="Корм для восстановления после операций" data-price="260">
+            <div class="product__main"><p class="price-row__name">Корм для восстановления после операций</p><p class="price-row__note">Консервы, 156 г</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">260&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap10">Отложить</button>
+          </li>
+          <li class="product" data-cat="food" data-id="ap11" data-name="Почечная диета для кошек" data-price="980">
+            <div class="product__main"><p class="price-row__name">Почечная диета для кошек</p><p class="price-row__note">Сухой, 400 г</p></div>
+            <span class="stock stock--order">Под заказ, 1–2 дня</span>
+            <span class="price-row__val">980&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap11">Отложить</button>
+          </li>
+          <li class="product" data-cat="parasites" data-id="ap12" data-name="Капли от блох и клещей для кошек" data-price="690">
+            <div class="product__main"><p class="price-row__name">Капли от блох и клещей для кошек</p><p class="price-row__note">До 4 кг, 1 пипетка</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">690&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap12">Отложить</button>
+          </li>
+          <li class="product" data-cat="parasites" data-id="ap13" data-name="Таблетка от клещей для собак" data-price="1750">
+            <div class="product__main"><p class="price-row__name">Таблетка от клещей для собак</p><p class="price-row__note">10–20 кг, действует 12 недель</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">1&nbsp;750&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap13">Отложить</button>
+          </li>
+          <li class="product" data-cat="parasites" data-id="ap14" data-name="Ошейник антипаразитарный" data-price="1100">
+            <div class="product__main"><p class="price-row__name">Ошейник антипаразитарный</p><p class="price-row__note">70 см</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">1&nbsp;100&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap14">Отложить</button>
+          </li>
+          <li class="product" data-cat="parasites" data-id="ap15" data-name="Антигельминтик для кошек" data-price="380">
+            <div class="product__main"><p class="price-row__name">Антигельминтик для кошек</p><p class="price-row__note">Таблетки, 2 шт</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">380&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap15">Отложить</button>
+          </li>
+          <li class="product" data-cat="parasites" data-id="ap16" data-name="Спрей от блох для помещений" data-price="840">
+            <div class="product__main"><p class="price-row__name">Спрей от блох для помещений</p><p class="price-row__note">200 мл</p></div>
+            <span class="stock stock--order">Под заказ, 1–2 дня</span>
+            <span class="price-row__val">840&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap16">Отложить</button>
+          </li>
+          <li class="product" data-cat="care" data-id="ap17" data-name="Шампунь гипоаллергенный" data-price="650">
+            <div class="product__main"><p class="price-row__name">Шампунь гипоаллергенный</p><p class="price-row__note">250 мл</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">650&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap17">Отложить</button>
+          </li>
+          <li class="product" data-cat="care" data-id="ap18" data-name="Лосьон для чистки ушей" data-price="480">
+            <div class="product__main"><p class="price-row__name">Лосьон для чистки ушей</p><p class="price-row__note">100 мл</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">480&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap18">Отложить</button>
+          </li>
+          <li class="product" data-cat="care" data-id="ap19" data-name="Защитный воротник" data-price="450">
+            <div class="product__main"><p class="price-row__name">Защитный воротник</p><p class="price-row__note">Размер 3</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">450&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap19">Отложить</button>
+          </li>
+          <li class="product" data-cat="care" data-id="ap20" data-name="Пелёнки впитывающие" data-price="350">
+            <div class="product__main"><p class="price-row__name">Пелёнки впитывающие</p><p class="price-row__note">60×60 см, 10 шт</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">350&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap20">Отложить</button>
+          </li>
+          <li class="product" data-cat="care" data-id="ap21" data-name="Зубная паста ферментная" data-price="560">
+            <div class="product__main"><p class="price-row__name">Зубная паста ферментная</p><p class="price-row__note">70 г</p></div>
+            <span class="stock stock--order">Под заказ, 1–2 дня</span>
+            <span class="price-row__val">560&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap21">Отложить</button>
+          </li>
+          <li class="product" data-cat="care" data-id="ap22" data-name="Попона послеоперационная" data-price="600">
+            <div class="product__main"><p class="price-row__name">Попона послеоперационная</p><p class="price-row__note">Размеры S–L</p></div>
+            <span class="stock stock--in">В наличии</span>
+            <span class="price-row__val">600&nbsp;₽</span>
+            <button class="btn btn--outline btn--sm product__btn" data-reserve="ap22">Отложить</button>
+          </li>
+        </ul>
+        <aside class="cart" id="cart" aria-live="polite">
+          <h3 class="cart__title">Отложено <span class="badge" id="cart-count">0</span></h3>
+          <ul class="cart__list" id="cart-list"></ul>
+          <p class="cart__empty" id="cart-empty">Нажмите «Отложить» у нужных товаров — соберём заказ к вашему приходу.</p>
+          <div class="cart__total"><span>Итого</span><b id="cart-total">0&nbsp;₽</b></div>
+          <button class="btn btn--accent" id="cart-submit" disabled>Забронировать <span class="arr">→</span></button>
+          <p class="cart__note">Оплата при получении. Рецептурные препараты отпускаются по назначению врача.</p>
+        </aside>
+      </div>
+      <div class="slots__empty" id="products-empty" hidden><b>Ничего не нашлось</b>Возможно, товар есть под заказ — уточните у фармацевта</div>
+    </section>
+
+    <section class="others card card--pad">
+      <div class="sec-head">
+        <h2 class="h2">Другие направления</h2>
+        <a href="services.html" class="btn btn--outline">Все услуги и цены <span class="arr">→</span></a>
+      </div>
+      <div class="minis">
+        <a class="mini" href="therapy.html" style="--bg:#f2f2f7"><span class="mini__title">Терапия и приём</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet5.png" alt="" loading="lazy"></a>
+        <a class="mini" href="vaccination.html" style="--bg:#ffb8cb"><span class="mini__title">Вакцинация</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet1.png" alt="" loading="lazy"></a>
+        <a class="mini" href="surgery.html" style="--bg:#ffd84d"><span class="mini__title">Хирургия</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet2.png" alt="" loading="lazy"></a>
+        <a class="mini" href="ophthalmology.html" style="--bg:#a9ccff"><span class="mini__title">Офтальмология</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet3.png" alt="" loading="lazy"></a>
+        <a class="mini" href="diagnostics.html" style="--bg:#a6e8c8"><span class="mini__title">Диагностика</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet4.png" alt="" loading="lazy"></a>
+        <a class="mini" href="grooming.html" style="--bg:#cbbeff"><span class="mini__title">Груминг</span><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span><img src="img/pet7.png" alt="" loading="lazy"></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__mark">Pro&amp;Vet</p>
+    <div class="footer__bottom">
+      <p class="footer__muted">ОГРНИП 000000000000000 · ИНН 0000000000</p>
+      <p class="footer__links"><a href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте</a> · <a href="https://wa.me/78005550000" target="_blank" rel="noopener">WhatsApp</a> · <a href="tel:+78005550000">+7 800 555 00 00</a></p>
+      <p class="footer__muted">© 2026 Pro&amp;Vet</p>
+    </div>
+  </footer>
+</div>
+
+<div class="modal" id="reserve" role="dialog" aria-modal="true" aria-labelledby="reserve-title" hidden>
+  <div class="modal__overlay" data-close-reserve></div>
+  <div class="modal__box modal__box--sm">
+    <div class="modal__head">
+      <div>
+        <span class="eyebrow eyebrow--accent">Ветаптека</span>
+        <h2 class="modal__title" id="reserve-title">Бронь товаров</h2>
+      </div>
+      <button class="arrow arrow--light" data-close-reserve aria-label="Закрыть">✕</button>
+    </div>
+    <form class="bk" id="reserve-form" novalidate>
+      <div class="ticket ticket--list" id="reserve-items"></div>
+      <div class="bk__fields">
+        <label class="field"><span>Ваше имя</span><input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+        <label class="field"><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+      </div>
+      <p class="bk__error" id="reserve-error" role="alert"></p>
+      <button type="submit" class="btn btn--accent">Подтвердить бронь <span class="arr">→</span></button>
+    </form>
+    <div class="bk-done" id="reserve-done" hidden>
+      <div class="bk-done__icon">✓</div>
+      <h3 class="bk-done__title">Заказ отложен</h3>
+      <p class="bk-done__text" id="reserve-done-text"></p>
+      <div class="bk-done__btns"><button class="btn btn--accent" data-close-reserve>Готово</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

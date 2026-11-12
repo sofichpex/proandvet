@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pro&amp;Vet — ветклиника, ветаптека и зоосалон в Ростове-на-Дону</title>
+  <meta name="description" content="Ветклиника, где питомцу не страшно: терапия, вакцинация, хирургия, офтальмология, диагностика, груминг и ветаптека. Онлайн-запись на приём.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&text=%E2%86%92%E2%86%97%E2%86%90&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo" aria-label="Pro&Vet — на главную">
+      <img src="img/logo.svg" width="40" height="40" alt="">
+      <span>Pro&amp;Vet</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="services.html">Услуги</a>
+      <a href="#team">Врачи</a>
+      <a href="grooming.html">Груминг</a>
+      <a href="pharmacy.html">Аптека</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+78005550000" class="header__phone">+7 800 555 00 00</a>
+      <button class="btn btn--accent btn--sm" data-booking>Записаться на приём</button>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="hero card">
+      <div class="hero__top">
+        <div class="hero__text">
+          <div class="chips">
+            <a class="chip" href="services.html">Ветклиника</a>
+            <a class="chip" href="pharmacy.html">Ветаптека</a>
+            <a class="chip" href="grooming.html">Зоосалон</a>
+          </div>
+          <h1 class="hero__title">Вы знаете его привычки,<br>а&nbsp;мы&nbsp;— как <span class="accent">помочь.</span></h1>
+          <p class="hero__lead">Расскажите, что беспокоит вашего питомца. Начнём с&nbsp;осмотра, объясним рекомендации и&nbsp;обсудим дальнейшие шаги</p>
+          <div class="hero__btns">
+            <button class="btn btn--accent" data-booking>Записаться <span class="arr">→</span></button>
+            <a href="services.html" class="btn btn--outline btn--white">Посмотреть услуги</a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <img src="img/hero.jpg" width="928" height="1152" alt="Врач осматривает собаку">
+        </div>
+      </div>
+      <div class="wordmark" aria-hidden="true">
+        <span class="wordmark__word">Pro</span>
+        <span class="wordmark__pill">
+          <img src="img/img.jpg" width="1456" height="720" alt="">
+          <span class="wordmark__plus">+</span>
+        </span>
+        <span class="wordmark__word">Vet</span>
+      </div>
+    </section>
+
+    <!-- Quick actions -->
+    <section class="quick">
+      <div class="q q--accent">
+        <img class="q__paw" src="img/paw-big.svg" width="320" height="320" alt="" aria-hidden="true">
+        <div class="q__head">
+          <span class="q__label q__label--light">Запись</span>
+          <button class="arrow arrow--white" data-booking aria-label="Записаться"><span class="arr">↗</span></button>
+        </div>
+        <a href="tel:+78005550000" class="q__phone">+7 800 555 00 00</a>
+        <div class="chips chips--lg">
+          <a href="https://wa.me/78005550000" target="_blank" rel="noopener" class="chip chip--ghost">WhatsApp</a>
+          <a href="https://vk.com/" target="_blank" rel="noopener" class="chip chip--ghost">ВКонтакте</a>
+          <button class="chip chip--ghost" data-booking>Перезвоните мне</button>
+        </div>
+      </div>
+      <div class="q q--pink">
+        <div class="q__head">
+          <span class="q__label">Боится врачей?</span>
+          <button class="arrow arrow--dark" data-booking="first" aria-label="Записаться на знакомство"><span class="arr">↗</span></button>
+        </div>
+        <div class="q__body">
+          <h3 class="q__title">Первый визит —<br> просто знакомство</h3>
+          <p class="q__text">Взвесимся, угостим лакомством и&nbsp;отпустим домой. Без уколов.</p>
+        </div>
+      </div>
+      <div class="q q--white">
+        <div class="q__head">
+          <span class="q__label q__label--muted">Как добраться</span>
+          <a href="#contacts" class="arrow arrow--accent" aria-label="Контакты"><span class="arr">↗</span></a>
+        </div>
+        <div class="q__body q__body--sm">
+          <h3 class="q__title">ул. Садовая, 18</h3>
+          <p class="q__text q__text--muted">Ростов-на-Дону · пн–вс 9:00–21:00</p>
+        </div>
+        <div class="rating-sm">
+          <img src="img/stars-sm.svg" width="96" height="16" alt="5 звёзд">
+          <span>4.8 на Яндекс Картах</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services card card--pad" id="services">
+      <div class="sec-head sec-head--end">
+        <h2 class="h2">Всё, что нужно<br>для здоровья питомца</h2>
+        <div class="services__aside">
+          <p>Семь направлений под одной крышей: от первой прививки до операции на глазах.</p>
+          <a href="services.html" class="btn btn--outline">Все услуги <span class="arr">→</span></a>
+        </div>
+      </div>
+      <div class="tiles">
+        <article class="tile tile--wide">
+          <div class="tile__content">
+            <div>
+              <h3 class="tile__title-lg"><a href="therapy.html">Терапия<br>и приём</a></h3>
+              <p class="tile__desc">Осмотр, консультация и&nbsp;понятный план лечения — без лишних назначений.</p>
+            </div>
+            <button class="btn btn--dark" data-booking="therapy">Записаться к терапевту <span class="arr">→</span></button>
+          </div>
+          <a href="therapy.html" class="tile__img tile__img--wide" tabindex="-1" aria-hidden="true"><img src="img/pet5.png" width="848" height="1264" alt="Корги" loading="lazy"></a>
+        </article>
+        <a class="tile tile--pink" href="vaccination.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Вакцинация</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Прививки по графику, ветпаспорт, чипирование</p>
+          </div>
+          <div class="tile__img" style="--w:341px;--h:423px"><img src="img/pet1.png" width="928" height="1152" alt="Бигль" loading="lazy"></div>
+        </a>
+        <a class="tile tile--yellow" href="surgery.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Хирургия</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Плановые операции и&nbsp;стерилизация</p>
+          </div>
+          <div class="tile__img" style="--w:306px;--h:380px"><img src="img/pet2.png" width="928" height="1152" alt="Кот в попоне" loading="lazy"></div>
+        </a>
+        <a class="tile tile--blue" href="ophthalmology.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Офтальмология</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Диагностика и&nbsp;операции на&nbsp;глазах</p>
+          </div>
+          <div class="tile__img" style="--w:276px;--h:342px"><img src="img/pet3.png" width="928" height="1152" alt="Серый кот" loading="lazy"></div>
+        </a>
+        <a class="tile tile--green" href="diagnostics.html">
+          <div class="tile__head tile__head--sm">
+            <div class="tile__row"><h3 class="tile__title">Диагностика</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Анализы, УЗИ и&nbsp;экспресс-тесты</p>
+          </div>
+          <div class="tile__img" style="--w:340px;--h:422px"><img src="img/pet4.png" width="928" height="1152" alt="Джек-рассел-терьер" loading="lazy"></div>
+        </a>
+        <a class="tile tile--violet" href="grooming.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Груминг</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Стрижка и&nbsp;уход в&nbsp;своём зоосалоне</p>
+          </div>
+          <div class="tile__img" style="--w:300px;--h:372px"><img src="img/pet7.png" width="928" height="1152" alt="Пудель" loading="lazy"></div>
+        </a>
+        <a class="tile tile--peach" href="pharmacy.html">
+          <div class="tile__head">
+            <div class="tile__row"><h3 class="tile__title">Ветаптека</h3><span class="arrow arrow--dark arrow--sm"><span class="arr">↗</span></span></div>
+            <p class="tile__text">Лекарства и&nbsp;корма сразу после приёма</p>
+          </div>
+          <div class="tile__img tile__img--crop" style="--w:402px;--h:479px"><img src="img/pet6.png" width="928" height="1152" alt="Мейн-кун" loading="lazy"></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="approach">
+      <div class="approach__main">
+        <span class="chip chip--pink">Наш подход</span>
+        <h2 class="h2 h2--white">Сначала —<br><span class="pink">знакомство.</span><br>Потом — лечение.</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <div class="step__body">
+              <h3 class="step__title">Знакомство</h3>
+              <p class="step__text">Взвешиваемся, угощаем лакомством и&nbsp;даём освоиться. Если питомец напуган — в&nbsp;первый раз больше ничего.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <div class="step__body">
+              <h3 class="step__title">Осмотр без принуждения</h3>
+              <p class="step__text">Спокойный темп и&nbsp;объяснение каждого шага владельцу.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <div class="step__body">
+              <h3 class="step__title">Понятный план</h3>
+              <p class="step__text">Диагноз, варианты лечения и&nbsp;стоимость — до&nbsp;начала процедур.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="approach__photo">
+        <img src="img/img1.jpg" width="928" height="1152" alt="Врач угощает щенка лакомством" loading="lazy">
+        <figure class="quote">
+          <img src="img/stars-sm.svg" width="96" height="16" alt="5 звёзд">
+          <blockquote>«Собака панически боялась врачей. Сначала мы просто взвешивались и&nbsp;получали лакомство. Теперь ходим спокойно.»</blockquote>
+          <figcaption>Марина П. · отзыв на Яндекс Картах</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team card card--pad" id="team">
+      <div class="sec-head sec-head--end">
+        <h2 class="h2">Врачи, которым доверяют<br>самых пугливых</h2>
+        <div class="slider-nav">
+          <button class="arrow arrow--outline" data-slide="-1" aria-label="Предыдущие врачи"><span class="arr">←</span></button>
+          <button class="arrow arrow--outline" data-slide="1" aria-label="Следующие врачи"><span class="arr">→</span></button>
+        </div>
+      </div>
+      <div class="doctors" id="doctors">
+        <article class="doctor">
+          <div class="doctor__photo">
+            <img src="img/doc1.jpg" width="1024" height="1024" alt="Елена Морозова" loading="lazy">
+            <span class="chip chip--white">Ведущий врач</span>
+          </div>
+          <div class="doctor__info">
+            <div>
+              <h3 class="doctor__name">Елена Морозова</h3>
+              <p class="doctor__role">Ведущий ветеринарный врач</p>
+            </div>
+            <button class="arrow arrow--accent" data-booking data-doctor="elena" aria-label="Записаться к врачу Елена Морозова"><span class="arr">↗</span></button>
+          </div>
+        </article>
+        <article class="doctor">
+          <div class="doctor__photo">
+            <img src="img/doc2.jpg" width="1024" height="1024" alt="Андрей Соколов" loading="lazy">
+            <span class="chip chip--white">Хирургия</span>
+          </div>
+          <div class="doctor__info">
+            <div>
+              <h3 class="doctor__name">Андрей Соколов</h3>
+              <p class="doctor__role">Хирург, офтальмолог</p>
+            </div>
+            <button class="arrow arrow--accent" data-booking data-doctor="andrey" aria-label="Записаться к врачу Андрей Соколов"><span class="arr">↗</span></button>
+          </div>
+        </article>
+        <article class="doctor">
+          <div class="doctor__photo">
+            <img src="img/doc3.jpg" width="1024" height="1024" alt="Мария Ковалёва" loading="lazy">
+            <span class="chip chip--white">Терапия</span>
+          </div>
+          <div class="doctor__info">
+            <div>
+              <h3 class="doctor__name">Мария Ковалёва</h3>
+              <p class="doctor__role">Терапевт, вакцинация</p>
+            </div>
+            <button class="arrow arrow--accent" data-booking data-doctor="maria" aria-label="Записаться к врачу Мария Ковалёва"><span class="arr">↗</span></button>
+          </div>
+        </article>
+        <article class="doctor">
+          <div class="doctor__photo">
+            <img src="img/doc4.jpg" width="1024" height="1024" alt="Сергей Лебедев" loading="lazy">
+            <span class="chip chip--white">Диагностика</span>
+          </div>
+          <div class="doctor__info">
+            <div>
+              <h3 class="doctor__name">Сергей Лебедев</h3>
+              <p class="doctor__role">Врач УЗИ-диагностики</p>
+            </div>
+            <button class="arrow arrow--accent" data-booking data-doctor="sergey" aria-label="Записаться к врачу Сергей Лебедев"><span class="arr">↗</span></button>
+          </div>
+        </article>
+        <article class="doctor">
+          <div class="doctor__photo">
+            <img src="img/doc5.jpg" width="1024" height="1024" alt="Анна Белова" loading="lazy">
+            <span class="chip chip--white">Терапия</span>
+          </div>
+          <div class="doctor__info">
+            <div>
+              <h3 class="doctor__name">Анна Белова</h3>
+              <p class="doctor__role">Терапевт, дерматолог</p>
+            </div>
+            <button class="arrow arrow--accent" data-booking data-doctor="anna" aria-label="Записаться к врачу Анна Белова"><span class="arr">↗</span></button>
+          </div>
+        </article>
+        <article class="doctor">
+          <div class="doctor__photo">
+            <img src="img/doc6.jpg" width="1024" height="1024" alt="Илья Кузнецов" loading="lazy">
+            <span class="chip chip--white">Хирургия</span>
+          </div>
+          <div class="doctor__info">
+            <div>
+              <h3 class="doctor__name">Илья Кузнецов</h3>
+              <p class="doctor__role">Хирург, травматолог</p>
+            </div>
+            <button class="arrow arrow--accent" data-booking data-doctor="ilya" aria-label="Записаться к врачу Илья Кузнецов"><span class="arr">↗</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews card card--pad" id="reviews">
+      <div class="sec-head">
+        <div class="score">
+          <span class="score__num">4.8</span>
+          <div class="score__meta">
+            <img src="img/stars-lg.svg" width="136" height="24" alt="5 звёзд">
+            <p>38 отзывов<br>на Яндекс Картах</p>
+          </div>
+        </div>
+        <a href="https://yandex.ru/maps/" target="_blank" rel="noopener" class="btn btn--dark">Читать все отзывы <span class="arr">→</span></a>
+      </div>
+      <div class="review-list">
+        <article class="review review--yellow">
+          <div>
+            <span class="review__mark">“</span>
+            <p class="review__text">Собака панически боялась врачей. Сначала мы просто взвешивались и&nbsp;получали лакомство. Теперь ходим спокойно.</p>
+          </div>
+          <div class="author"><span class="author__ava">М</span><div><p class="author__name">Марина П.</p><p class="author__date">1 июня</p></div></div>
+        </article>
+        <article class="review review--pink">
+          <div>
+            <span class="review__mark">“</span>
+            <p class="review__text">Малышу сделали операцию на&nbsp;глазки. Врачи — чудо, сервис выше всех похвал. Теперь это наша семейная клиника.</p>
+          </div>
+          <div class="author"><span class="author__ava">К</span><div><p class="author__name">Ксения Макаренко</p><p class="author__date">13 августа</p></div></div>
+        </article>
+        <article class="review review--violet">
+          <div>
+            <span class="review__mark">“</span>
+            <p class="review__text">Врач профессионально поставила диагноз. Видно, что здесь в&nbsp;первую очередь помогают, а&nbsp;не&nbsp;продают услуги.</p>
+          </div>
+          <div class="author"><span class="author__ava">О</span><div><p class="author__name">Оля Юдина</p><p class="author__date">28 августа</p></div></div>
+        </article>
+        <article class="review review--green">
+          <div>
+            <span class="review__mark">“</span>
+            <p class="review__text">Пришли снять катетер — сняли быстро. Ветеринар очень добрый и&nbsp;отзывчивый, записывайте своих булок к&nbsp;ней.</p>
+          </div>
+          <div class="author"><span class="author__ava">Л</span><div><p class="author__name">Лиана Тыркина</p><p class="author__date">1 июня</p></div></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Grooming + Pharmacy -->
+    <section class="duo">
+      <div class="grooming" id="grooming">
+        <div class="duo__content">
+          <div class="duo__top">
+            <span class="eyebrow">Зоосалон</span>
+            <h2 class="h3">Груминг<br>в той же<br>клинике</h2>
+            <p class="duo__text">Стрижка, мытьё и&nbsp;гигиена — а&nbsp;рядом врач, если что-то заметим.</p>
+          </div>
+          <div class="hero__btns">
+            <button class="btn btn--dark" data-booking="grooming">Записаться <span class="arr">→</span></button>
+            <a href="grooming.html" class="btn btn--outline btn--dark-outline">Цены</a>
+          </div>
+        </div>
+        <div class="grooming__img"><img src="img/img2.png" width="848" height="1264" alt="Бишон и йоркширский терьер" loading="lazy"></div>
+      </div>
+      <div class="pharmacy" id="pharmacy">
+        <a class="pharmacy__link" href="pharmacy.html" aria-label="Перейти в ветаптеку"></a>
+        <span class="arrow arrow--dark pharmacy__arrow" aria-hidden="true"><span class="arr">↗</span></span>
+        <div class="capsule" aria-hidden="true"><span></span><span></span></div>
+        <div class="duo__top">
+          <span class="eyebrow">Ветаптека</span>
+          <h2 class="h3">Лекарства —<br>сразу после<br>приёма</h2>
+        </div>
+        <div class="chips chips--wrap">
+          <a class="chip chip--white chip--lg" href="pharmacy.html#cat-drugs">Препараты</a>
+          <a class="chip chip--white chip--lg" href="pharmacy.html#cat-food">Лечебные корма</a>
+          <a class="chip chip--white chip--lg" href="pharmacy.html#cat-parasites">Антипаразитарные</a>
+          <a class="chip chip--white chip--lg" href="pharmacy.html#cat-care">Средства ухода</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts card card--pad" id="contacts">
+      <div class="contacts__info">
+        <h2 class="h2">Ждём вас<br>в Pro&amp;Vet</h2>
+        <div class="contacts__data">
+          <a href="tel:+78005550000" class="contacts__phone">+7 800 555 00 00</a>
+          <p class="contacts__addr">Ростов-на-Дону, ул. Садовая, 18</p>
+          <p class="contacts__hours">Часы работы — уточнить у клиники</p>
+        </div>
+        <div class="contacts__btns">
+          <button class="btn btn--accent" data-booking>Записаться <span class="arr">→</span></button>
+          <a href="https://wa.me/78005550000" target="_blank" rel="noopener" class="btn btn--outline">WhatsApp</a>
+          <a href="https://vk.com/" target="_blank" rel="noopener" class="btn btn--outline">ВКонтакте</a>
+          <a href="https://yandex.ru/maps/?text=Ростов-на-Дону%2C%20ул.%20Садовая%2C%2018" target="_blank" rel="noopener" class="btn btn--outline">Маршрут</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?ll=39.700036%2C47.218255&amp;z=17" title="Pro&amp;Vet на Яндекс Картах" loading="lazy" tabindex="-1"></iframe>
+        <div class="pin">
+          <span class="pin__icon"><img src="img/paw-pin.svg" width="16" height="16" alt=""></span>
+          <span>Pro&amp;Vet · ул. Садовая, 18</span>
+        </div>
+        <a class="map__link" href="https://yandex.ru/maps/?pt=39.700036,47.218255&amp;z=17&amp;l=map" target="_blank" rel="noopener" aria-label="Открыть Pro&amp;Vet на Яндекс Картах"></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__mark">Pro&amp;Vet</p>
+    <div class="footer__bottom">
+      <p class="footer__muted">ОГРНИП 000000000000000 · ИНН 0000000000</p>
+      <p class="footer__links"><a href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте</a> · <a href="https://wa.me/78005550000" target="_blank" rel="noopener">WhatsApp</a> · <a href="tel:+78005550000">+7 800 555 00 00</a></p>
+      <p class="footer__muted">© 2026 Pro&amp;Vet</p>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
